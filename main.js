@@ -22,7 +22,7 @@ addToShoppingButton.forEach((addToCartButton) => {
 
 // Utilizo query para selecionar el contenedor del carrito
 const carritoContainer = document.querySelector(
-    '.containerCartProducts'
+    '.containerCartProducts' 
 );
 
 

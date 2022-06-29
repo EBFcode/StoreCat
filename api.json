@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "titulo": "Collar Ajustable",
+        "precio": 100,
+        "url": "/img/Collar_ajustable.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Arbol Cama",
+        "precio": 650,
+        "url": "/img/arbol-cama.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Dizfraz Murcielago",
+        "precio": 415,
+        "url": "/img/Dizfraz-Murcielago.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Gato Bebedero",
+        "precio": 800,
+        "url": "/img/gato-bebedero-gatos.jpg"
+    }
+]

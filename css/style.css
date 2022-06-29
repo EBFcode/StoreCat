@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #101010;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #202020;
+
+    padding: 10px 50px ;
+
+}
+
+header label{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.menu {
+    color: #fff;
+    font-size: 15px;
+
+    list-style: none;
+    display: flex;
+
+    align-self: end;
+
+    font-weight: bold;
+
+}
+
+.menu li{
+    margin: 5px;
+}
+
+.menu li a{
+    box-shadow: 0px 5px 7px rgba(28, 110, 140, 0.5);
+
+
+    background-color: #1C6E8C;
+    border: 3px solid #274156;
+    color: #fff;
+
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+
+#active {
+    background-color: #274156;
+    border: 3px solid #1C6E8C;
+
+    font-weight: 900;
+    color: #fff;
+}
+
+.menu li a:hover{
+    box-shadow: 0px 2px 7px rgba(28, 110, 140, 0.5);
+}
+
+.searchBtn{
+    background-color: #1C6E8C;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+
+    box-shadow: 0px 5px 7px rgba(28, 110, 140, 0.5);
+    transition: all 0.5s;
+}
+
+.searchBtn::placeholder {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.searchBtn:hover{
+    box-shadow: 0px 2px 7px rgba(28, 110, 140, 0.5);
+}
+
+/* Background */
+
+.bgPhoto {
+    background-color: #1C6E8C;
+    width: 100%;
+
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.8);
+
+}
+
+.bgPhoto img{
+    background-color: #274156;
+
+    border-radius: 10px;
+    width: 500px;
+}
+
+/* Productos */
+
+.productsContainer{
+    padding: 50px;
+    color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.product{
+    background-color: #274156;
+    box-shadow: 0px 5px 7px rgba(28, 110, 140, 0.5);
+    border: 1px solid #fff;
+
+
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px;
+
+}
+

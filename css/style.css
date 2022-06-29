@@ -93,6 +93,22 @@ header label{
     box-shadow: 0px 2px 7px rgba(28, 110, 140, 0.5);
 }
 
+/* <!-- Carrito que aparece con el click al carrito --> */
+
+.carritoContainer{
+    transition: all 0.9s;
+    background-color: #605856;
+    color: #fff;
+
+    padding: 50px;
+
+}
+
+.containerCartProducts{
+
+}
+
+
 /* Background */
 
 .bgPhoto {
@@ -124,7 +140,7 @@ header label{
     color: #fff;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
     justify-items: center;
@@ -139,11 +155,18 @@ header label{
 
     padding: 10px;
     border-radius: 10px;
-    height: 300px;
+    height: 400px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    max-width: 300px;
+}
+
+.product img{
+    object-fit: cover;
+    height: 250px;
 }
 
 button{

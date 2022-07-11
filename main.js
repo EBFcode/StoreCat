@@ -1,14 +1,30 @@
-// Boton de pregunta si a la persona le gusta los gatos
-// const addMensajeCat = document.querySelectorAll('.preguntaGatito');
-// addMensajeCat.forEach((addToCartButton) => {
-//     addToCartButton.addEventListener('click', () => addToClickedGatito;
-// });
+
+// Utilizando Fetch (Esta api esta en mi GitHub para pintar los productos)
+const contenedorProductos = document.getElementById('contenedorProductos');
 
 
+fetch('https://imcod3r.github.io/CatStoreApi/api.json')
+    .then( (res) => res.json() )
+    .then( (data) => {
+        console.log(data)
+        data.forEach(post => {
+            const product =  document.createElement('div');
+            product.innerHTML = ` 
 
-// const btnAskGatunaContainer = document.querySelector(
-//     '.btnAskGatuna'
-// );
+                <div class="product">
+                    <img class="item-img" src=${post.url} alt="fotoProduct">
+                    <div class="detalles-producto">
+                        <h3 class="item-title">${post.titulo}</h3>
+                        <br>
+                        <h4 class="item-precio">$${post.precio}</h4>
+                    </div>
+                    <button class="agregarAlCarrito">Agregar al carrito</button>
+                </div>
+            ` 
+
+            contenedorProductos.append(product)
+        });
+    } );
 
 
 

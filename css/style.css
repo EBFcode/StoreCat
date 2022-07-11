@@ -8,6 +8,8 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -150,6 +152,14 @@ header label{
     width: 500px;
 }
 
+.respuestaNo {
+    display: none;
+}
+
+.respuestaSi {
+    display: none;
+}
+
 /* Productos */
 
 .productsContainer{
@@ -204,3 +214,8 @@ button:hover{
 
 }
 
+/* Clase desactivadora y activadora display */
+
+.activador{
+    display: inline-block;
+}

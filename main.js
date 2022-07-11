@@ -1,3 +1,39 @@
+
+
+
+const preguntaGatitoSi = document.getElementById('preguntaGatitoSi');
+const preguntaGatitoNo = document.getElementById('preguntaGatitoNo');
+
+
+
+preguntaGatitoSi.addEventListener('click', () => {
+    // 1 segundo para que no muestre el mensaje tan rapido
+    setTimeout(() => {
+        Swal.fire({
+            title: 'Genial',
+            text: 'Eres lo maximo, sabias?😽',
+            icon: 'info',
+            confirmButtonText: 'Cool'
+        })
+    }, 1000)
+
+});
+
+preguntaGatitoNo.addEventListener('click', () => {
+    // 1 segundo para que no muestre el mensaje tan rapido
+    setTimeout(() => {
+        Swal.fire({
+            title: '😿',
+            text: 'Porque eres asi?',
+            icon: 'error',
+            confirmButtonText: 'quitar'
+        })
+    }, 1000)
+
+});
+
+
+
 // Boton de pregunta si a la persona le gusta los gatos
 // const addMensajeCat = document.querySelectorAll('.preguntaGatito');
 // addMensajeCat.forEach((addToCartButton) => {
